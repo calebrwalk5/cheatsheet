@@ -10,7 +10,7 @@ int main() {
   cout << "hello\n";
   cout << variable << "\n";
   cout << string << "\n";
-  cout << CONSTANT << "\n";
+  fprintf("%d \n", CONSTANT);
    for (int i = 0; i < 3; i++) {
     cout << array[i] << "\n";
    }
