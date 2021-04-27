@@ -5,6 +5,7 @@ const PREFIX = "prefix";
 
 client.on('ready', ready => {
   console.log("ready");
+  client.user.setActivity('music', { type: 'LISTENING' });
 });
 
 client.on('guildMemberAdd', newuser => {
@@ -12,6 +13,7 @@ client.on('guildMemberAdd', newuser => {
 });
 
 client.on('message', message => {
+  if (message.author.bot) return;
   if (message.content.startsWith(`${PREFIX}ping`)) {
     message.channel.send("pong");
   }
