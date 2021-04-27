@@ -1,4 +1,5 @@
 const input =  require('readline-sync');
+var fs = require('fs');
 const CONSTANT = "constant";
 var variable = "variable";
 var array = ["one", "two", "three"];
@@ -9,8 +10,13 @@ function main() {
   for (var i = 0; i < array.length; i++) {
     console.log(array[i]);
   }
+  filesystem();
+}
+
+function filesystem() {
   let input = input.question("readline sync io: ");
-  console.log(input);
+  var data = fs.readFileSync('input.txt');
+  console.log(input + data.toString());
 }
 
 main();
