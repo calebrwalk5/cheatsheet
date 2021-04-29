@@ -31,7 +31,10 @@ function output() {
 
 function math() {
   var pi = Math.PI;
-  var a = Math.random();
+  var a = 0;
+  a = Math.floor((Math.random() * 10) + 1);
+  a = a * pi;
+  a = Math.round(a);
   a = a + 1;
   a = a * 3;
   a = a / 2;
