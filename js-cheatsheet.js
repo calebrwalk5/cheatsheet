@@ -4,6 +4,11 @@ const CONSTANT = "constant";
 var variable = "variable";
 var array = ["one", "two", "three"];
 
+// Single line comment
+/*
+Multi line comment
+*/
+
 function main() {
   console.log(variable);
   console.log(CONSTANT);
